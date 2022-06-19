@@ -1,6 +1,6 @@
 # calendar-st7735
 
-## Setup
+## 安装库
 * Arduino -> Tools -> Manage Libraries...
 * 搜索st7735
 * 安装Adafruit ST7735 and ST7789 Library
@@ -23,10 +23,10 @@ public:
 ...
 ```
 
-### 第2步，添加设置代码
+### 第2步，添加设置原点代码
 ```
 ...
   tft.initR(INITR_BLACKTAB);
-  tft.setColRowStart(2,1); // 设置原点坐标为(2,1)
+  tft.setColRowStart(2,1); // 设置原点坐标为(2,1)。一定要在initR()之后，否则无效。
 ...
 ```
