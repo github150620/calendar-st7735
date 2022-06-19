@@ -7,8 +7,7 @@
 
 ## 原点偏移问题解决方法
 ### 第1步，修改库文件
-找到Adafrui_ST77xx.h
-修改前
+找到Adafrui_ST77xx.h（通常位于Documents/Arduino/libraries/下），把函数setColRowStart()改为公有函数。修改前
 ```
 protected:
 ...
